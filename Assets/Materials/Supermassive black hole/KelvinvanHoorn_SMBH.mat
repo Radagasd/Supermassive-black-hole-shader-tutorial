@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: KelvinvanHoorn_SMBH
+  m_Shader: {fileID: 4800000, guid: c2a609019c60cab40939d1be44fd4504, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DiscTex:
+        m_Texture: {fileID: 2800000, guid: 642ef0af194574b41976c937059f79c2, type: 3}
+        m_Scale: {x: 4, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DiscInnerRadius: 0.15
+    - _DiscOuterRadius: 0.75
+    - _DiscSpeed: 2
+    - _DiscWidth: 0.01
+    - _DopplerBeamingFactor: 66
+    - _GConst: 0.3
+    - _HueRadius: 0.75
+    - _HueShiftFactor: -0.03
+    - _SSRadius: 0.01
+    - _StepSize: 0.1
+    - _Steps: 256
+    m_Colors:
+    - _DiscColor: {r: 4, g: 0.9882353, b: 0, a: 1}
+  m_BuildTextureStacks: []
