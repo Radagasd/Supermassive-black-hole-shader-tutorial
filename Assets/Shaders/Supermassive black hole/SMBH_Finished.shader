@@ -74,7 +74,7 @@ Shader "KelvinvanHoorn/SMBH_Finished"
 
 			float _DiscSpeed;
 
-			float3 _DiscColor;
+			float4 _DiscColor;
 			float _DopplerBeamingFactor;
 			float _HueRadius;
 			float _HueShiftFactor;
@@ -408,9 +408,9 @@ Shader "KelvinvanHoorn/SMBH_Finished"
 
 				float3 backgroundCol = SampleSceneColor(distortedScreenUV) * (1 - blackHoleMask);
 
-				float3 discCol = discColor(_DiscColor, planarDiscPos, discDir, _WorldSpaceCameraPos, uv.x, discRadius);
+				float3 discCol = discColor(_DiscColor.rgb, planarDiscPos, discDir, _WorldSpaceCameraPos, uv.x, discRadius);
 
-				transmittance *= texCol;
+				transmittance *= texCol * _DiscColor.a;
 				float3 col = lerp(backgroundCol, discCol, transmittance);
 				return float4(col,1);
 			}
